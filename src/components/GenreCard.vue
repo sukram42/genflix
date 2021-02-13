@@ -16,7 +16,7 @@ export default {
   props: ['genre'],
   methods: {
     openLink: function (link) {
-      const win = window.open(`http://www.${link}`, '_blank')
+      window.open(`http://www.${link}`, '_blank')
     }
   }
 }
