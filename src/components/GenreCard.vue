@@ -41,7 +41,7 @@ export default {
     text-align: right;
   }
   .genre-code:hover{
-    opacity: 1;
+    opacity: 1.0;
   }
   .watch {
     position: absolute;

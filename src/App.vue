@@ -118,6 +118,9 @@ a {
                          "main"
                          "nav" "nav";
   }
+  #nav {
+    border-top: 1px solid #DDD;
+  }
 
 }
 
@@ -127,9 +130,6 @@ a {
     grid-template-rows: 50px auto 0;
     grid-template-areas: "header header"
     "nav main" "footer footer";
-  }
-  #nav {
-    border-top: 1px solid #DDD;
   }
   a:hover{
     background-color: #F9F9F9;
