@@ -37,11 +37,11 @@ export default {
   .genre-code {
     grid-area: number;
     color: #FFFF;
-    opacity: 85%;
+    opacity: 0.85;
     text-align: right;
   }
   .genre-code:hover{
-    opacity: 100%;
+    opacity: 1;
   }
   .watch {
     position: absolute;
