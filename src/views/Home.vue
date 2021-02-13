@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <SearchGenreBar v-model="value"/>
-    <GenreList :genres="genreList"/>
+    <GenreList :genres="genreList"
+               :set-search-string="searchGenre"
+    />
   </div>
 </template>
 
@@ -24,6 +26,7 @@ export default class Home extends Vue {
   genreList: { genre: string; code: number }[] = genres
 
   searchGenre (searchText: string) {
+    this.value = searchText
     this.genreList = genres.filter(x => {
       console.log(x, searchText, x.genre.includes(searchText))
       return x.genre.toLowerCase().includes(searchText.toLowerCase())
@@ -36,3 +39,8 @@ export default class Home extends Vue {
   }
 }
 </script>
+<style lang="scss" scoped>
+  .home{
+    padding: 10px;
+  }
+</style>
